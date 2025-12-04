@@ -1,5 +1,5 @@
 {
-  "$schema": "https://www.schemastore.org/tsconfig",
+  "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 22",
   "_version": "22.0.0",
 
@@ -7,6 +7,8 @@
     "lib": ["es2024", "ESNext.Array", "ESNext.Collection", "ESNext.Iterator"],
     "module": "nodenext",
     "target": "es2022",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
 
     "strict": true,
     "esModuleInterop": true,
