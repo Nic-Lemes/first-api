@@ -27,3 +27,6 @@ Tabelas principais definidas em `src/database/schema.ts`:
 
 ## Licença
 ISC (ver `package.json`).
+
+## Considerações Finais
+Projeto desenvolvido utilizando como base as aulas fornecidas pela [Rocketseat](https://app.rocketseat.com.br/?type=ALL), sendo mestradas pelo tutor [Diego Fernandes](https://github.com/diego3g).
