@@ -1,14 +1,26 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOTEzMjkyMC0wYmNhLTQ1NjEtOGQzMC0wN2IxOTc4Yzk5Y2MiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTIxNDAwNH0.NshpGUH8kPUSmZJOz2DqhyYW0EOiA-HzYHnikz_PXaU
 
 {
-  "title": "Curso de Docker"
+  "title": "Primeira API"
 }
 
 ###
 
-GET http://localhost:3333/courses
+GET http://localhost:3333/courses?orderBy=title
 
 ###
 
-GET http://localhost:3333/courses/027a49a3-0c7e-441e-a1d6-4ec797c13306
+GET http://localhost:3333/courses/624393cf-9117-4b26-a5d3-fb874a8ec629
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOTEzMjkyMC0wYmNhLTQ1NjEtOGQzMC0wN2IxOTc4Yzk5Y2MiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1NTIxMzEwN30.oLv9EnuNBZi6jOii-n-rUPahGnjO2mLAqXsW0c5H_5E
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "Nicolas@yahoo.com",
+  "password": "456789"
+}
